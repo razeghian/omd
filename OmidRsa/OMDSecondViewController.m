@@ -9,6 +9,7 @@
 #import "OMDSecondViewController.h"
 
 @interface OMDSecondViewController ()
+@property (weak, nonatomic) IBOutlet UIWebView *wevwiew;
 
 @end
 
@@ -17,7 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    NSString *fullURL = @"http://payrsa.com/RSAM/renew.php";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_wevwiew loadRequest:requestObj];
 }
 
 - (void)didReceiveMemoryWarning

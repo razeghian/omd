@@ -7,6 +7,7 @@
 //
 
 #import "OMDAppDelegate.h"
+#import "OMDThirdViewController.h"
 
 @implementation OMDAppDelegate
 
@@ -42,5 +43,6 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 @end
